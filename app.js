@@ -6,6 +6,7 @@ function popup() {
     }, 1500);
 }
 
-function handleChange() {
+function handleChange({ target }) {
     popup();
+    target.value = '';
 }
