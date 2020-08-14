@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TodoApp</title>
+
+         <!-- CSS -->
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body onload="refreshTodo()">
+
+        <div id="App">
+            <h1 class="heading">My Todo List 📝</h1>
+
+            <input 
+                class="input-custom" 
+                type="text" 
+                placeholder="Enter task" 
+                id="newTodo"
+                onchange="createTodo(event)"
+            >
+
+            <ul id="toDo">
+
+            </ul>
+        </div>
+
+        <div id="popup">
+            
+        </div>
+
+        <footer class="footer">
+            <p>Made by <span class="name"><a href="https://github.com/zaimeali" target="_blank">Abdul Raffay Rizwan🚀</a></span></p>
+        </footer>
+        
+        <!-- JS -->
+        <script src="./app.js"></script>
+    </body>
+</html>
