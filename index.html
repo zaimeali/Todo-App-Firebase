@@ -10,9 +10,18 @@
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+        
+        <!-- Firebase -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+        <script src="./init-firebase.js"></script>
     </head>
-    <body onload="refreshTodo()">
+    <body onload="windowLoad()">
 
+        <div class="remove-all-tasks">
+            <button onclick="removeAllTasks()" id="removeAllTasks">Remove All Tasks 🗑️</button>
+        </div>
         <div id="App">
             <h1 class="heading">My Todo List 📝</h1>
 
@@ -21,7 +30,7 @@
                 type="text" 
                 placeholder="Enter task" 
                 id="newTodo"
-                onchange="handleChange(event)"
+                onchange="createTodo(event)"
             >
 
             <ul id="toDo">
@@ -38,11 +47,5 @@
         
         <!-- JS -->
         <script src="./app.js"></script>
-        
-        <!-- Firebase -->
-        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
-        <script src="/__/firebase/init.js"></script>
-        <script src="./firebase_config.js"></script>
     </body>
 </html>
