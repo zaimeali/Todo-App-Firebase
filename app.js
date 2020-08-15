@@ -38,7 +38,7 @@ let todoList = [];
 function windowLoad() {
     // getFirebaseData();
     refreshTodo();
-    // alert("You Can Scroll if list gets bigger");
+    alert("You Can Scroll if list gets bigger");
 }
 
 document.getElementById('toDo').innerHTML = '';
