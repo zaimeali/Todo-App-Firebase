@@ -112,7 +112,14 @@ input::placeholder{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
-  
+ 
+.scroll-list {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 10px;
+    color: rgb(209, 209, 209);
+}
 
 .list_task{
     list-style-type: none;
